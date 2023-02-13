@@ -1,0 +1,72 @@
+.greetingForm {
+    /*display: grid;*/
+    /*grid-template-rows: 1fr 1fr;*/
+    /*!*grid-template-areas: 'i b';*!*/
+    /*gap: 5px;*/
+    /*margin: 20px;*/
+    margin: 100px;
+}
+
+.inputAndButtonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.error {
+    margin-left: 15px;
+}
+
+.input input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.input:focus {
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.errorInput {
+    border: 1px solid #CC0000;
+    border-radius: 5px;
+}
+
+.inputAndButtonContainer button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    background-color:#0066CC;
+    border-radius: 5px;
+    color: #ddeeff;
+    /*opacity: 0.5;*/
+
+
+}
+
+.button:focus {
+}
+
+.button:active {
+
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.greeting {
+
+}

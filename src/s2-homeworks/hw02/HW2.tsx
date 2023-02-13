@@ -38,7 +38,7 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
 
 
-    if (filter !== 'all') return affairs.filter((a: AffairType) => a.priority === filter) //  говорим здесь что если в filter не all то выведи мне массив в котором будут лежать affairs, у которых свойство priority строго равно тому что мы получим из функций файле Аffairs.tsx
+    if (filter !== 'all') return affairs.filter((a: AffairType) => a.priority === filter) //  говорим здесь что если в filter не all то выведи мне массив в котором будут лежать affairs, у которых свойство priority строго равно тому что мы получим из функций в файле Аffairs.tsx
 
     return affairs // need to fix
 }
