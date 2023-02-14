@@ -1,6 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 import {UserType} from "./HW3";
+import s2 from "../hw02/affairs/Affairs.module.css";
 
 type GreetingPropsType = {
     name: string // need to fix any
@@ -26,8 +27,9 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:)
-
+    const inputClass = error ? s.errorInput : s.input // need to fix with (?:)
+    // const nameClass = s.name + ' ' + s2[props.affair.priority]
+    // const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>
@@ -43,7 +45,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
-                        className={s.inputClass}
+                        className={inputClass}
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
