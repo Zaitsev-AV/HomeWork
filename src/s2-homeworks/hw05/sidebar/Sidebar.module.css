@@ -1,0 +1,66 @@
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe4ea;
+    transition: 0.5s;
+    transform: translateX(-100%); /*этими свойствами говорим меню что изначально оно спрятано */
+    opacity: 0.85;
+}
+
+.sidebar.open {
+    transform: translateX(0%); /*этими свойствами открывает меню(ось Х) возвращаем от -100 к 0*/
+}
+
+.background {
+    /*background-color: #00cc22;*/
+    /*z-index: 50;*/
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 20%;
+    flex-direction: column;
+    margin-bottom: 400px;
+    /*margin-left: 25px;*/
+    /*padding: 20px;*/
+    font-size: 25px;
+
+}
+
+.nav a {
+    text-decoration: khaki;
+    color: black;
+}
+
+.nav a:hover {
+    color: #00cc22;
+}
+
+.nav a.active {
+    text-decoration: underline;
+    color: #0059B2;
+;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background-color:#dfe4ea;
+    cursor: pointer;
+}
+
+.close img {
+}
