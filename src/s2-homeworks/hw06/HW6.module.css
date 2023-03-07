@@ -1,0 +1,13 @@
+.buttonsContainer {
+    margin-left: 70px;
+    padding: 20px;
+}
+
+.buttonsContainer button {
+    margin-right: 30px;
+}
+
+.editableSpanContainer {
+    margin-left: 70px;
+    padding: 20px;
+}

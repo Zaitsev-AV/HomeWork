@@ -4,64 +4,72 @@
     left: 574px;
     top: 1465px;
     border: none;
+    transition: all 0.3s ;
 }
 
 .disabled {
-    font-family: 'Montserrat';
+    font-family:  inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     background: #004D99;
     opacity: 0.5;
-    border-radius: 3px;
+    border-radius: 7px;
 }
 
 .secondary {
-    border: 1px solid #0066CC;
+    border: 1px solid white;
     width: 167px;
     height: 30px;
-    font-family: 'Montserrat', serif;
+    font-family:  inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #0066CC;
-    border-radius: 3px;
+    color: #3c5998;
+    border-radius: 7px;
+    margin-bottom: 15px;
 }
 
 .default {
-    font-family: 'Montserrat';
+    font-family: inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     background: #0066CC;
-    border-radius: 3px;
+    border-radius: 7px;
     color: white;
 }
 
 .red {
-    font-family: 'Montserrat';
+    font-family: inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    background: #CC1439;
-    border-radius: 3px;
+    background: #ea4335;
+    border-radius: 7px;
     color: white;
 }
 
 .default:hover {
-    background: #0080FF;
+    background: #3c5998;
     width: 167px;
     height: 30px;
+    border-color:#3c5998;
+    box-shadow:0px 0px 50px #3c5998;
+    color:white;
 }
 
 .red:hover {
-    background-color: #FF1A47;
+    background-color: #ea4335;
     width: 167px;
     height: 30px;
+    border-color:#ea4335;
+    box-shadow:0px 0px 50px #ea4335;
+    color:white;
 
 }
 
@@ -69,6 +77,9 @@
     background: #E5F0FA;
     width: 167px;
     height: 30px;
+    border-color:#03A9F4;
+    box-shadow:0px 0px 50px #03A9F4;
+    color:#03A9F4;
 }
 
 
