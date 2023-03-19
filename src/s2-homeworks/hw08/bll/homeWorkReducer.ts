@@ -15,7 +15,7 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
                     return value = a.name > b.name ?  1 : -1
                 }
                 if ( action.payload === "down" ) {
-                    return value = a.name < b.name ? 1 : -1
+                    return value = a.name < b.name ? -1 : 1
                 }
                 return value
             })]
