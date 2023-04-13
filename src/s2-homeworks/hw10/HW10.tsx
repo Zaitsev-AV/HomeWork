@@ -35,7 +35,7 @@ dispatch(loadingAC(true))
             <div className={s2.hw}>
                 {isLoading ? (
                     <div id={'hw10-loading'}>
-                        <Loader/>
+                        <Loader />
                     </div>
                 ) : (
                     <SuperButton
