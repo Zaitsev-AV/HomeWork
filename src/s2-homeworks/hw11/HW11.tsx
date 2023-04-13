@@ -36,6 +36,7 @@ function HW11() {
                         <span id={'hw11-value'} className={s.number}>{value1}</span>
                         <SuperRange
                             id={'hw11-single-slider'}
+                            onChange={change}
                             value={value1}
                             // сделать так чтоб value1 изменялось // пишет студент
 
@@ -47,7 +48,7 @@ function HW11() {
                             id={'hw11-double-slider'}
                             value={[value1,value2]}
                             onChange={change}
-                            getAriaLabel={() => 'range'}
+                            getAriaLabel={() => 'text'}
                             // сделать так чтоб value1/2 изменялось // пишет студент
 
                         />
