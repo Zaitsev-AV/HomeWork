@@ -18,10 +18,10 @@ const themes = [
     {id: 2, value: 'blue'},
     {id: 3, value: 'dark'},
 ]
-// export type themType = {
-//     id: number
-//     value: string | number
-// }
+export type themType = {
+    id: number
+    value: string | number
+}
 
 const HW12 = () => {
     // взять ид темы из редакса
