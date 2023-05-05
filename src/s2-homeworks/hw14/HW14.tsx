@@ -4,6 +4,7 @@ import s from './HW14.module.css'
 import axios from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
 import {useSearchParams} from 'react-router-dom'
+import { unstable_ClassNameGenerator } from "@mui/material";
 
 /*
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
@@ -16,9 +17,10 @@ import {useSearchParams} from 'react-router-dom'
 const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2',
-            {params: {find}}
+            'https://samurai.it-incubator.io/api/3.0/homework/test2',
+            { params: { find } }
         )
+        .then( ( res ) => res.data.techs )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
         })
@@ -35,17 +37,19 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
+                console.log( res )
+                res && setTechs( res )
                 // сохранить пришедшие данные
-
                 //
             })
+            .finally(()=> setLoading( false ))
     }
 
     const onChangeText = (value: string) => {
+            console.log(value)
         setFind(value)
         // делает студент
-
+        setSearchParams( value )
         // добавить/заменить значение в квери урла
         // setSearchParams(
 
