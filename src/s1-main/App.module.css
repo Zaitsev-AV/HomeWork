@@ -5,6 +5,11 @@
 .hw {
 
 }
+.hw14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .hwTitle {
     display: flex;
